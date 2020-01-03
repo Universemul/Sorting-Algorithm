@@ -1,5 +1,5 @@
 [package]
-name = "Sorting-Algorithm"
+name = "sorting_algorithm"
 version = "0.1.0"
 authors = ["Universemul <davidbarthelemy28@gmail.com>"]
 edition = "2018"
