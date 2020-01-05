@@ -1,6 +1,7 @@
 /target
 **/*.rs.bk
-
+.DS_STORE
+/.vscode
 
 #Added by cargo
 #
