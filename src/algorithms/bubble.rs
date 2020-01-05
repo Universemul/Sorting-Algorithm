@@ -1,10 +1,8 @@
-pub fn sort(tab: &mut Vec<i32>) -> () {
+pub fn sort<T: Ord>(tab: &mut [T]) -> () {
     let len = tab.len();
-    if len == 0 {
-        println!("Vec is empty");
+    if len <= 1 {
         return
     }
-    println!("[BUBBLE SORT] BEFORE {:?}", tab);
     for idx in 0..len {
         let mut has_swap = false;
         for j in 0..len-idx-1 {
@@ -17,5 +15,4 @@ pub fn sort(tab: &mut Vec<i32>) -> () {
             break
         }
     }
-    println!("[BUBBLE SORT] BEFORE {:?}", tab);
 }

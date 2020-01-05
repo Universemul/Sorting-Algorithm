@@ -1,10 +1,8 @@
-pub fn sort(tab: &mut Vec<i32>) -> () {
+pub fn sort<T: Ord>(tab: &mut [T]) -> () {
     let len = tab.len();
-    if len == 0 {
-        println!("Vec is empty");
+    if len <= 1 {
         return
     }
-    println!("[INSERTION SORT] BEFORE {:?}", tab);
     for idx in 1..len {
         let mut j = idx;
         /*
@@ -15,5 +13,4 @@ pub fn sort(tab: &mut Vec<i32>) -> () {
             j -= 1;
         }
     }
-    println!("[INSERTION SORT] BEFORE {:?}", tab);
 }

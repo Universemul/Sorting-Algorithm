@@ -1,10 +1,8 @@
-pub fn sort(tab: &mut Vec<i32>) -> () {
+pub fn sort<T: Ord>(tab: &mut [T]) -> () {
     let len = tab.len();
-    if len == 0 {
-        println!("Vec is empty");
+    if len <= 1 {
         return
     }
-    println!("[SELECTION SORT] BEFORE {:?}", tab);
     for idx in 0..len-1 {
         let slice = &tab[idx+1 .. len];
         // We select only a part of the main vec.
@@ -18,5 +16,4 @@ pub fn sort(tab: &mut Vec<i32>) -> () {
         ;
         tab.swap(idx, s_index);
     }
-    println!("[SELECTION SORT] AFTER {:?}", tab)
 }
