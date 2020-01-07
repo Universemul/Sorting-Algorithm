@@ -1,5 +1,6 @@
-pub mod bubble;
-pub mod selection;
-pub mod insertion;
+pub mod bubblesort;
+pub mod selectionsort;
+pub mod insertionsort;
 pub mod quicksort;
 pub mod mergesort;
+pub mod heapsort;

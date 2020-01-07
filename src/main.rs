@@ -6,6 +6,6 @@ fn main() {
     //algorithms::selection::sort(&mut data);
     //algorithms::insertion::sort(&mut data);
     println!("{:?}", data);
-    algorithms::mergesort::sort(&mut data);
+    algorithms::heapsort::sort(&mut data);
     println!("{:?}", data);
 }
