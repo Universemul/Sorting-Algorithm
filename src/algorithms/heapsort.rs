@@ -34,3 +34,33 @@ pub fn sort<T: Ord>(tab: &mut [T]) -> () {
     }
     //heapify(tab, 0)
 }
+
+#[cfg(test)]
+mod tests {
+
+    use super::*;
+
+    #[test]
+    fn heapsort_basic() {
+        let mut tab = vec![4, 2, 3, 1, 5, 9, -1];
+        sort(&mut tab);
+
+        assert_eq!(tab, vec![-1, 1, 2, 3, 4, 5, 9]);
+    }
+
+     #[test]
+    fn heapsort_duplicate() {
+        let mut tab = vec![5, 2, 2, 2, 5, 5, 5];
+        sort(&mut tab);
+
+        assert_eq!(tab, vec![2, 2, 2, 5, 5, 5, 5]);
+    }
+
+    #[test]
+    fn heapsort_empty() {
+        let mut tab: Vec<i32> = vec![];
+        sort(&mut tab);
+
+        assert!(tab.is_empty());
+    } 
+}
