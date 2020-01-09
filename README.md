@@ -2,9 +2,16 @@
 
 The main purpose of this repo is to learn more Rust language by writing some sorting algorithms.
 
-### TODO 
+### Bubble Sort
 
- * Testing
- * Merge sort
- * Heap Sort
- * GUI to visualize each step of each algorithm
++ Worst case performance O(n^2)
++ Best case performance O(n)
++ Average case performance O(n^2)
+
+### Selection Sort
+
+### Insertion sort
+
+### Merge Sort
+
+### Quick Sort
